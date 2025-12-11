@@ -37,7 +37,11 @@ src/*.bak
 # (Remove this block if you want to keep XML files)
 # *.xml
 # !data/drugbank.xsd   # allow schema file to remain
-
+# DrugBank large files
+data/*.xml
+data/*.ZIP
+*.xml
+one_medicine.xml
 # =========================================================
 # PROLOG / SWI PROLOG GENERATED FILES
 # =========================================================
