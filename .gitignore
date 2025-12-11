@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+ENV/
+.env/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Prolog SWI cache
+*.qlf
+
+# Data files (if you want to ignore them)
+*.jsonl
+data/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+*.DS_Store
+Thumbs.db
+
+
+*.logs
+*.one_medicine.xml
