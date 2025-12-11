@@ -1,30 +1,62 @@
-# Python cache
+# =========================================================
+# PYTHON CACHE & BYTECODE
+# =========================================================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Virtual environment
+# =========================================================
+# VIRTUAL ENVIRONMENTS
+# =========================================================
 venv/
-ENV/
 .env/
+ENV/
+.venv/
 
-# Streamlit secrets
+# =========================================================
+# STREAMLIT
+# =========================================================
+.streamlit/
 .streamlit/secrets.toml
 
-# Prolog SWI cache
+# =========================================================
+# LOG FILES
+# =========================================================
+logs/
+*.log
+
+# =========================================================
+# DATA FILES (generated outputs)
+# =========================================================
+src/*.csv
+src/*.tmp
+src/*.bak
+
+# Ignore large XMLs if they are generated dynamically
+# (Remove this block if you want to keep XML files)
+# *.xml
+# !data/drugbank.xsd   # allow schema file to remain
+
+# =========================================================
+# PROLOG / SWI PROLOG GENERATED FILES
+# =========================================================
 *.qlf
+*.pid
+*.out
 
-# Data files (if you want to ignore them)
-*.jsonl
-data/
-
-# IDE settings
+# =========================================================
+# OS / EDITOR ARTIFACTS
+# =========================================================
 .vscode/
 .idea/
-
-# OS files
 *.DS_Store
 Thumbs.db
 
-
-*.logs
-*.one_medicine.xml
+# =========================================================
+# BACKUP / TEMPORARY FILES
+# =========================================================
+*.bak
+*.tmp
+*.swp
+*.swo
