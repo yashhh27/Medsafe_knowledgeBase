@@ -1,0 +1,35 @@
+% Auto-generated from target_medicines.xml
+
+drug('DB00001', lepirudin).
+drug('DB00030', insulin_human).
+drug('DB00264', metoprolol).
+drug('DB00315', zolmitriptan).
+drug('DB00316', acetaminophen).
+drug('DB00331', metformin).
+drug('DB00338', omeprazole).
+drug('DB00381', amlodipine).
+drug('DB00390', digoxin).
+drug('DB00437', allopurinol).
+drug('DB00471', montelukast).
+drug('DB00563', methotrexate).
+drug('DB00586', diclofenac).
+drug('DB00678', losartan).
+drug('DB00682', warfarin).
+drug('DB00722', lisinopril).
+drug('DB00727', nitroglycerin).
+drug('DB00788', naproxen).
+drug('DB00852', pseudoephedrine).
+drug('DB00938', salmeterol).
+drug('DB00945', acetylsalicylic_acid).
+drug('DB00951', isoniazid).
+drug('DB00982', isotretinoin).
+drug('DB00996', gabapentin).
+drug('DB00999', hydrochlorothiazide).
+drug('DB01001', albuterol).
+drug('DB01050', ibuprofen).
+drug('DB01067', glipizide).
+drug('DB01076', atorvastatin).
+drug('DB01222', budesonide).
+drug('DB01225', enoxaparin).
+drug('DB01261', sitagliptin).
+drug('DB13867', fluticasone).
