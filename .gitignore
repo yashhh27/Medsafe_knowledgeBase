@@ -38,6 +38,7 @@ src/*.bak
 # *.xml
 # !data/drugbank.xsd   # allow schema file to remain
 # DrugBank large files
+data/
 data/*.xml
 data/*.ZIP
 *.xml
