@@ -55,6 +55,15 @@ severity(reduced_effect,                 minor).
 severity(increased_effect,               minor).
 severity(mild_interaction,               minor).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DRUG–CONDITION CONTRAINDICATIONS
+%% contraindicated/2 comes from contraindications.pl:
+%%     contraindicated(DrugID, ConditionAtom).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+unsafe_for_condition(RawDrug, Condition) :-
+    normalize_drug(RawDrug, Drug),
+    contraindicated(Drug, Condition).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,15 +105,6 @@ unsafe_context(RawA, drug(RawB), Severity) :-
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% DRUG–CONDITION CONTRAINDICATIONS
-%% contraindicated/2 comes from contraindications.pl:
-%%     contraindicated(DrugID, ConditionAtom).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-unsafe_for_condition(RawDrug, Condition) :-
-    normalize_drug(RawDrug, Drug),
-    contraindicated(Drug, Condition).
 
 
 
@@ -150,6 +150,151 @@ unsafe_class_interaction(RawA, RawB, Effect) :-
     drug_class(A, ClassA),
     drug_class(B, ClassB),
     class_interaction(ClassA, ClassB, Effect).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

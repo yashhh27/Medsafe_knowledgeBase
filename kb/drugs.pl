@@ -1,4 +1,3 @@
-% Auto-generated from target_medicines.xml
 
 drug('DB00001', lepirudin).
 drug('DB00030', insulin_human).

@@ -126,9 +126,9 @@ def confidence_badge(severity: str) -> str:
 # -------------------------------
 # UI SETUP
 # -------------------------------
-st.set_page_config(page_title="Medication Safety Checker", layout="centered")
+st.set_page_config(page_title="MedSafe: Medication Safety Checker", layout="centered")
 
-st.title("💊 Medication Safety Checker")
+st.title("Medication Safety Checker")
 st.caption(
     "Rule-based medication safety using a Prolog knowledge base "
     "built from DrugBank XML and FDA label–aligned rules."
